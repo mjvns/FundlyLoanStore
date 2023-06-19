@@ -1,13 +1,17 @@
 package com.fundly.services;
 
+import com.fundly.dao.ILoanDao;
 import com.fundly.dto.Loan;
+import com.fundly.factories.LoanDaoFactory;
 
 public class ILoanServiceImpl implements ILoanService{
+	
+	public ILoanDao loandao = null;
 
 	@Override
 	public boolean save(Loan loan) {
-		// TODO Auto-generated method stub
-		return false;
+		loandao = LoanDaoFactory.getLoanDao();
+		return loandao.save(loan);
 	}
 
 	@Override

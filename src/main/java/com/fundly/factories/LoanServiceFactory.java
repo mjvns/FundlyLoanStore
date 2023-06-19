@@ -2,10 +2,10 @@ package com.fundly.factories;
 
 import com.fundly.services.ILoanServiceImpl;
 
-public class ILoanServiceFactory {
+public class LoanServiceFactory {
 	
 	public static ILoanServiceImpl loanservice = null;
-	private ILoanServiceFactory(){};
+	private LoanServiceFactory(){};
 	
 	public static ILoanServiceImpl getLoanService(){
 		if(loanservice == null) {

@@ -2,9 +2,9 @@ package com.fundly.factories;
 
 import com.fundly.dao.ILoanDaoImpl;
 
-public class ILoanDaoFactory {
+public class LoanDaoFactory {
 	public static ILoanDaoImpl loandao = null;
-	private ILoanDaoFactory() {}
+	private LoanDaoFactory() {}
 	
 	public static ILoanDaoImpl getLoanDao() {
 		if(loandao == null) {

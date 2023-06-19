@@ -2,10 +2,10 @@ package com.fundly.factories;
 
 import com.fundly.controllers.ILoanControllerImpl;
 
-public class ILoanControllerFactory {
+public class LoanControllerFactory {
 	
 	public static ILoanControllerImpl loancontroller = null;
-	private ILoanControllerFactory(){}
+	private LoanControllerFactory(){}
 	
 	public static ILoanControllerImpl getLoanController() {
 		if(loancontroller == null) {

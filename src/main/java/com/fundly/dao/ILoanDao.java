@@ -1,5 +1,7 @@
 package com.fundly.dao;
 
+import java.sql.SQLException;
+
 import com.fundly.dto.Loan;
 
 public interface ILoanDao {

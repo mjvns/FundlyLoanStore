@@ -1,13 +1,17 @@
 package com.fundly.controllers;
 
 import com.fundly.dto.Loan;
+import com.fundly.factories.LoanServiceFactory;
+import com.fundly.services.ILoanService;
 
 public class ILoanControllerImpl implements ILoanController{
+	
+	public ILoanService loanservice = null;
 
 	@Override
 	public boolean save(Loan loan) {
-		// TODO Auto-generated method stub
-		return false;
+		loanservice = LoanServiceFactory.getLoanService();
+		return loanservice.save(loan);
 	}
 
 	@Override
